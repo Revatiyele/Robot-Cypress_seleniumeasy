@@ -1,0 +1,1685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.8 on win32)" generated="20211208 19:57:55.376" rpa="false">
+<suite id="s1" name="RobotFramework" source="C:\Users\REVATI YELE\eclipse-workspace\RobotFramework">
+<suite id="s1-s1" name="TESTSUITE1" source="C:\Users\REVATI YELE\eclipse-workspace\RobotFramework\TESTSUITE1.robot">
+<kw name="Open Browser" library="SeleniumLibrary" type="setup">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20211208 19:57:55.693" level="INFO">Opening browser 'Chrome' to base url 'https://demo.seleniumeasy.com/'.</msg>
+<status status="PASS" starttime="20211208 19:57:55.693" endtime="20211208 19:58:01.680"></status>
+</kw>
+<test id="s1-s1-t1" name="TestCase1_SimpleForms">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211208 19:58:01.682" endtime="20211208 19:58:01.808"></status>
+</kw>
+<kw name="Capture_ScreenShort_SimpleForms" library="Resource1">
+<doc>Captures Screenshorts while validating SimpleForms.</doc>
+<kw name="Set Screenshot Directory" library="SeleniumLibrary">
+<doc>Sets the directory for captured screenshots.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/ScreenShorts/Tc01_SimpleForms</arg>
+</arguments>
+<assign>
+<var>${previous}</var>
+</assign>
+<msg timestamp="20211208 19:58:01.816" level="INFO">${previous} = None</msg>
+<status status="PASS" starttime="20211208 19:58:01.812" endtime="20211208 19:58:01.816"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<assign>
+<var>${file}</var>
+</assign>
+<msg timestamp="20211208 19:58:02.236" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShorts/Tc01_SimpleForms/selenium-screenshot-12.png"&gt;&lt;img src="ScreenShorts/Tc01_SimpleForms/selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20211208 19:58:02.236" level="INFO">${file} = C:\Users\REVATI YELE\eclipse-workspace\RobotFramework\ScreenShorts\Tc01_SimpleForms\selenium-screenshot-12.png</msg>
+<status status="PASS" starttime="20211208 19:58:01.817" endtime="20211208 19:58:02.237"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:01.810" endtime="20211208 19:58:02.237"></status>
+</kw>
+<kw name="Close_Popup" library="Resource1">
+<doc>Closes the Appeared Pop Up.</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${ClosePopup}</arg>
+</arguments>
+<status status="PASS" starttime="20211208 19:58:02.238" endtime="20211208 19:58:02.497"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ClosePopup}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:02.498" level="INFO">Clicking element 'xpath=//*[@id="at-cv-lightbox-close"]'.</msg>
+<status status="PASS" starttime="20211208 19:58:02.497" endtime="20211208 19:58:02.549"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:02.237" endtime="20211208 19:58:02.549"></status>
+</kw>
+<kw name="Open_InputForms" library="Resource1">
+<doc>Selects Input Forms.</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${InputFormsLink}</arg>
+</arguments>
+<status status="PASS" starttime="20211208 19:58:02.550" endtime="20211208 19:58:02.583"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${InputFormsLink}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:02.584" level="INFO">Clicking link 'xpath=//*[@id="navbar-brand-centered"]/ul[1]/li[1]/a'.</msg>
+<status status="PASS" starttime="20211208 19:58:02.584" endtime="20211208 19:58:02.626"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:02.549" endtime="20211208 19:58:02.627"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SimpleFormDemoLink}</arg>
+</arguments>
+<status status="PASS" starttime="20211208 19:58:02.627" endtime="20211208 19:58:02.647"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SimpleFormDemoLink}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:02.648" level="INFO">Clicking element 'xpath=//*[@id="navbar-brand-centered"]/ul[1]/li[1]/ul/li[1]/a'.</msg>
+<status status="PASS" starttime="20211208 19:58:02.648" endtime="20211208 19:58:03.292"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${MessageBox}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:03.294" level="INFO">Clicking element 'xpath=//*[@id="user-message"]'.</msg>
+<status status="PASS" starttime="20211208 19:58:03.293" endtime="20211208 19:58:03.351"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${EnterMessage}</arg>
+<arg>${message}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:03.352" level="INFO">Typing text 'Hello' into text field 'xpath=//*[@id="user-message"]'.</msg>
+<status status="PASS" starttime="20211208 19:58:03.351" endtime="20211208 19:58:03.414"></status>
+</kw>
+<kw name="Capture_ScreenShort_SimpleForms" library="Resource1">
+<doc>Captures Screenshorts while validating SimpleForms.</doc>
+<kw name="Set Screenshot Directory" library="SeleniumLibrary">
+<doc>Sets the directory for captured screenshots.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/ScreenShorts/Tc01_SimpleForms</arg>
+</arguments>
+<assign>
+<var>${previous}</var>
+</assign>
+<msg timestamp="20211208 19:58:03.415" level="INFO">${previous} = C:\Users\REVATI YELE\eclipse-workspace\RobotFramework\ScreenShorts\Tc01_SimpleForms</msg>
+<status status="PASS" starttime="20211208 19:58:03.415" endtime="20211208 19:58:03.415"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<assign>
+<var>${file}</var>
+</assign>
+<msg timestamp="20211208 19:58:03.659" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShorts/Tc01_SimpleForms/selenium-screenshot-13.png"&gt;&lt;img src="ScreenShorts/Tc01_SimpleForms/selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20211208 19:58:03.659" level="INFO">${file} = C:\Users\REVATI YELE\eclipse-workspace\RobotFramework\ScreenShorts\Tc01_SimpleForms\selenium-screenshot-13.png</msg>
+<status status="PASS" starttime="20211208 19:58:03.416" endtime="20211208 19:58:03.660"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:03.414" endtime="20211208 19:58:03.660"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ClickShowMessage}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:03.660" level="INFO">Clicking element 'xpath=//*[@id="get-input"]/button'.</msg>
+<status status="PASS" starttime="20211208 19:58:03.660" endtime="20211208 19:58:03.699"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>${Printed_Message}</arg>
+<arg>${message}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:03.700" level="INFO">Verifying element 'xpath=//*[@id="display"]' contains exact text 'Hello'.</msg>
+<status status="PASS" starttime="20211208 19:58:03.700" endtime="20211208 19:58:03.720"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${EnterInput-a}</arg>
+<arg>${input-a}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:03.721" level="INFO">Typing text '2' into text field 'id=sum1'.</msg>
+<status status="PASS" starttime="20211208 19:58:03.720" endtime="20211208 19:58:03.794"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${EnterInput-b}</arg>
+<arg>${input-b}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:03.795" level="INFO">Typing text '3' into text field 'id=sum2'.</msg>
+<status status="PASS" starttime="20211208 19:58:03.795" endtime="20211208 19:58:03.878"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ClickGetTotal}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:03.879" level="INFO">Clicking element 'xpath=//button[@onclick='return total()']'.</msg>
+<status status="PASS" starttime="20211208 19:58:03.879" endtime="20211208 19:58:03.914"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>${Printed_TotalValue}</arg>
+<arg>${value}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:03.915" level="INFO">Verifying element 'xpath=//*[@id="displayvalue"]' contains exact text '5'.</msg>
+<status status="PASS" starttime="20211208 19:58:03.914" endtime="20211208 19:58:03.935"></status>
+</kw>
+<kw name="Capture_ScreenShort_SimpleForms" library="Resource1">
+<doc>Captures Screenshorts while validating SimpleForms.</doc>
+<kw name="Set Screenshot Directory" library="SeleniumLibrary">
+<doc>Sets the directory for captured screenshots.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/ScreenShorts/Tc01_SimpleForms</arg>
+</arguments>
+<assign>
+<var>${previous}</var>
+</assign>
+<msg timestamp="20211208 19:58:03.936" level="INFO">${previous} = C:\Users\REVATI YELE\eclipse-workspace\RobotFramework\ScreenShorts\Tc01_SimpleForms</msg>
+<status status="PASS" starttime="20211208 19:58:03.936" endtime="20211208 19:58:03.937"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<assign>
+<var>${file}</var>
+</assign>
+<msg timestamp="20211208 19:58:04.094" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShorts/Tc01_SimpleForms/selenium-screenshot-14.png"&gt;&lt;img src="ScreenShorts/Tc01_SimpleForms/selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20211208 19:58:04.095" level="INFO">${file} = C:\Users\REVATI YELE\eclipse-workspace\RobotFramework\ScreenShorts\Tc01_SimpleForms\selenium-screenshot-14.png</msg>
+<status status="PASS" starttime="20211208 19:58:03.937" endtime="20211208 19:58:04.095"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:03.935" endtime="20211208 19:58:04.096"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:01.681" endtime="20211208 19:58:04.096" critical="yes"></status>
+</test>
+<test id="s1-s1-t2" name="Testcase2_Checkbox">
+<kw name="Capture_ScreenShort_Checkbox" library="Resource1">
+<doc>Captures Screenshorts while validating Checkboxes.</doc>
+<kw name="Set Screenshot Directory" library="SeleniumLibrary">
+<doc>Sets the directory for captured screenshots.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/ScreenShorts/Tc02_Checkbox</arg>
+</arguments>
+<assign>
+<var>${previous}</var>
+</assign>
+<msg timestamp="20211208 19:58:04.101" level="INFO">${previous} = C:\Users\REVATI YELE\eclipse-workspace\RobotFramework\ScreenShorts\Tc01_SimpleForms</msg>
+<status status="PASS" starttime="20211208 19:58:04.100" endtime="20211208 19:58:04.101"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<assign>
+<var>${file}</var>
+</assign>
+<msg timestamp="20211208 19:58:04.229" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShorts/Tc02_Checkbox/selenium-screenshot-7.png"&gt;&lt;img src="ScreenShorts/Tc02_Checkbox/selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20211208 19:58:04.229" level="INFO">${file} = C:\Users\REVATI YELE\eclipse-workspace\RobotFramework\ScreenShorts\Tc02_Checkbox\selenium-screenshot-7.png</msg>
+<status status="PASS" starttime="20211208 19:58:04.102" endtime="20211208 19:58:04.229"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:04.099" endtime="20211208 19:58:04.230"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${InputFormsLink}</arg>
+</arguments>
+<status status="PASS" starttime="20211208 19:58:04.230" endtime="20211208 19:58:04.510"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${InputFormsLink}</arg>
+</arguments>
+<status status="PASS" starttime="20211208 19:58:04.511" endtime="20211208 19:58:04.538"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${InputFormsLink}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:04.539" level="INFO">Clicking link 'xpath=//*[@id="navbar-brand-centered"]/ul[1]/li[1]/a'.</msg>
+<status status="PASS" starttime="20211208 19:58:04.539" endtime="20211208 19:58:04.581"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Check_BoxDemo_Link}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:04.582" level="INFO">Clicking element 'link=Checkbox Demo'.</msg>
+<status status="PASS" starttime="20211208 19:58:04.582" endtime="20211208 19:58:04.875"></status>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<arguments>
+<arg>${Select_CheckBox}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:04.876" level="INFO">Selecting checkbox 'id=isAgeSelected'.</msg>
+<status status="PASS" starttime="20211208 19:58:04.876" endtime="20211208 19:58:04.954"></status>
+</kw>
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<arguments>
+<arg>${Select_CheckBox}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:04.955" level="INFO">Verifying checkbox 'id=isAgeSelected' is selected.</msg>
+<status status="PASS" starttime="20211208 19:58:04.954" endtime="20211208 19:58:04.987"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>${CheckBox_Message}</arg>
+<arg>${printed_checkbox_message}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:04.988" level="INFO">Verifying element 'xpath=//*[@id="txtAge"]' contains exact text 'Success - Check box is checked'.</msg>
+<status status="PASS" starttime="20211208 19:58:04.987" endtime="20211208 19:58:05.005"></status>
+</kw>
+<kw name="Capture_ScreenShort_Checkbox" library="Resource1">
+<doc>Captures Screenshorts while validating Checkboxes.</doc>
+<kw name="Set Screenshot Directory" library="SeleniumLibrary">
+<doc>Sets the directory for captured screenshots.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/ScreenShorts/Tc02_Checkbox</arg>
+</arguments>
+<assign>
+<var>${previous}</var>
+</assign>
+<msg timestamp="20211208 19:58:05.006" level="INFO">${previous} = C:\Users\REVATI YELE\eclipse-workspace\RobotFramework\ScreenShorts\Tc02_Checkbox</msg>
+<status status="PASS" starttime="20211208 19:58:05.005" endtime="20211208 19:58:05.006"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<assign>
+<var>${file}</var>
+</assign>
+<msg timestamp="20211208 19:58:05.141" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShorts/Tc02_Checkbox/selenium-screenshot-8.png"&gt;&lt;img src="ScreenShorts/Tc02_Checkbox/selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20211208 19:58:05.141" level="INFO">${file} = C:\Users\REVATI YELE\eclipse-workspace\RobotFramework\ScreenShorts\Tc02_Checkbox\selenium-screenshot-8.png</msg>
+<status status="PASS" starttime="20211208 19:58:05.006" endtime="20211208 19:58:05.141"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:05.005" endtime="20211208 19:58:05.142"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Click_CheckAll}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:05.142" level="INFO">Clicking element 'id=check1'.</msg>
+<status status="PASS" starttime="20211208 19:58:05.142" endtime="20211208 19:58:05.184"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Unselect_CheckBox}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:05.188" level="INFO">Clicking element 'xpath=//input[@class='cb1-element'][1]'.</msg>
+<status status="PASS" starttime="20211208 19:58:05.185" endtime="20211208 19:58:05.229"></status>
+</kw>
+<kw name="Select&amp;Verify_All_CheckBoxes" library="Resource1">
+<doc>Selects every Checkbox and Validates whether Checkbox is selected.</doc>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<doc>Returns the number of elements matching ``locator``.</doc>
+<arguments>
+<arg>${Checkbox_Count}</arg>
+</arguments>
+<assign>
+<var>${Get_Checkboxes_count}</var>
+</assign>
+<msg timestamp="20211208 19:58:05.242" level="INFO">${Get_Checkboxes_count} = 4</msg>
+<status status="PASS" starttime="20211208 19:58:05.230" endtime="20211208 19:58:05.242"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Get_Checkboxes_count}</arg>
+</arguments>
+<status status="PASS" starttime="20211208 19:58:05.243" endtime="20211208 19:58:05.243"></status>
+</kw>
+<kw name="${index} IN RANGE [ ${Get_Checkboxes_count} ]" type="for">
+<kw name="${index} = 0" type="foritem">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="easycont"]/div/div[2]/div[2]/div[2]/div[${index}+1]/label/input</arg>
+</arguments>
+<msg timestamp="20211208 19:58:05.244" level="INFO">Selecting checkbox 'xpath=//*[@id="easycont"]/div/div[2]/div[2]/div[2]/div[0+1]/label/input'.</msg>
+<status status="PASS" starttime="20211208 19:58:05.244" endtime="20211208 19:58:05.288"></status>
+</kw>
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<arguments>
+<arg>xpath=//*[@id="easycont"]/div/div[2]/div[2]/div[2]/div[${index}+1]/label/input</arg>
+</arguments>
+<msg timestamp="20211208 19:58:05.289" level="INFO">Verifying checkbox 'xpath=//*[@id="easycont"]/div/div[2]/div[2]/div[2]/div[0+1]/label/input' is selected.</msg>
+<status status="PASS" starttime="20211208 19:58:05.288" endtime="20211208 19:58:05.311"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:05.243" endtime="20211208 19:58:05.311"></status>
+</kw>
+<kw name="${index} = 1" type="foritem">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="easycont"]/div/div[2]/div[2]/div[2]/div[${index}+1]/label/input</arg>
+</arguments>
+<msg timestamp="20211208 19:58:05.312" level="INFO">Selecting checkbox 'xpath=//*[@id="easycont"]/div/div[2]/div[2]/div[2]/div[1+1]/label/input'.</msg>
+<status status="PASS" starttime="20211208 19:58:05.312" endtime="20211208 19:58:05.341"></status>
+</kw>
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<arguments>
+<arg>xpath=//*[@id="easycont"]/div/div[2]/div[2]/div[2]/div[${index}+1]/label/input</arg>
+</arguments>
+<msg timestamp="20211208 19:58:05.341" level="INFO">Verifying checkbox 'xpath=//*[@id="easycont"]/div/div[2]/div[2]/div[2]/div[1+1]/label/input' is selected.</msg>
+<status status="PASS" starttime="20211208 19:58:05.341" endtime="20211208 19:58:05.363"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:05.311" endtime="20211208 19:58:05.363"></status>
+</kw>
+<kw name="${index} = 2" type="foritem">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="easycont"]/div/div[2]/div[2]/div[2]/div[${index}+1]/label/input</arg>
+</arguments>
+<msg timestamp="20211208 19:58:05.364" level="INFO">Selecting checkbox 'xpath=//*[@id="easycont"]/div/div[2]/div[2]/div[2]/div[2+1]/label/input'.</msg>
+<status status="PASS" starttime="20211208 19:58:05.364" endtime="20211208 19:58:05.391"></status>
+</kw>
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<arguments>
+<arg>xpath=//*[@id="easycont"]/div/div[2]/div[2]/div[2]/div[${index}+1]/label/input</arg>
+</arguments>
+<msg timestamp="20211208 19:58:05.392" level="INFO">Verifying checkbox 'xpath=//*[@id="easycont"]/div/div[2]/div[2]/div[2]/div[2+1]/label/input' is selected.</msg>
+<status status="PASS" starttime="20211208 19:58:05.392" endtime="20211208 19:58:05.413"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:05.363" endtime="20211208 19:58:05.413"></status>
+</kw>
+<kw name="${index} = 3" type="foritem">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="easycont"]/div/div[2]/div[2]/div[2]/div[${index}+1]/label/input</arg>
+</arguments>
+<msg timestamp="20211208 19:58:05.414" level="INFO">Selecting checkbox 'xpath=//*[@id="easycont"]/div/div[2]/div[2]/div[2]/div[3+1]/label/input'.</msg>
+<status status="PASS" starttime="20211208 19:58:05.414" endtime="20211208 19:58:05.445"></status>
+</kw>
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<arguments>
+<arg>xpath=//*[@id="easycont"]/div/div[2]/div[2]/div[2]/div[${index}+1]/label/input</arg>
+</arguments>
+<msg timestamp="20211208 19:58:05.446" level="INFO">Verifying checkbox 'xpath=//*[@id="easycont"]/div/div[2]/div[2]/div[2]/div[3+1]/label/input' is selected.</msg>
+<status status="PASS" starttime="20211208 19:58:05.445" endtime="20211208 19:58:05.467"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:05.414" endtime="20211208 19:58:05.467"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:05.243" endtime="20211208 19:58:05.467"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:05.230" endtime="20211208 19:58:05.468"></status>
+</kw>
+<kw name="Capture_ScreenShort_Checkbox" library="Resource1">
+<doc>Captures Screenshorts while validating Checkboxes.</doc>
+<kw name="Set Screenshot Directory" library="SeleniumLibrary">
+<doc>Sets the directory for captured screenshots.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/ScreenShorts/Tc02_Checkbox</arg>
+</arguments>
+<assign>
+<var>${previous}</var>
+</assign>
+<msg timestamp="20211208 19:58:05.469" level="INFO">${previous} = C:\Users\REVATI YELE\eclipse-workspace\RobotFramework\ScreenShorts\Tc02_Checkbox</msg>
+<status status="PASS" starttime="20211208 19:58:05.468" endtime="20211208 19:58:05.469"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<assign>
+<var>${file}</var>
+</assign>
+<msg timestamp="20211208 19:58:05.597" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShorts/Tc02_Checkbox/selenium-screenshot-9.png"&gt;&lt;img src="ScreenShorts/Tc02_Checkbox/selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20211208 19:58:05.597" level="INFO">${file} = C:\Users\REVATI YELE\eclipse-workspace\RobotFramework\ScreenShorts\Tc02_Checkbox\selenium-screenshot-9.png</msg>
+<status status="PASS" starttime="20211208 19:58:05.470" endtime="20211208 19:58:05.598"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:05.468" endtime="20211208 19:58:05.598"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:04.098" endtime="20211208 19:58:05.598" critical="yes"></status>
+</test>
+<test id="s1-s1-t3" name="Testcase3_RadioButtons">
+<kw name="Capture_ScreenShort_Radiobutton" library="Resource1">
+<doc>Captures Screenshorts while validating RadioButtons.</doc>
+<kw name="Set Screenshot Directory" library="SeleniumLibrary">
+<doc>Sets the directory for captured screenshots.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/ScreenShorts/Tc03_RadioButtons</arg>
+</arguments>
+<assign>
+<var>${previous}</var>
+</assign>
+<msg timestamp="20211208 19:58:05.601" level="INFO">${previous} = C:\Users\REVATI YELE\eclipse-workspace\RobotFramework\ScreenShorts\Tc02_Checkbox</msg>
+<status status="PASS" starttime="20211208 19:58:05.600" endtime="20211208 19:58:05.601"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<assign>
+<var>${file}</var>
+</assign>
+<msg timestamp="20211208 19:58:05.738" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShorts/Tc03_RadioButtons/selenium-screenshot-7.png"&gt;&lt;img src="ScreenShorts/Tc03_RadioButtons/selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20211208 19:58:05.739" level="INFO">${file} = C:\Users\REVATI YELE\eclipse-workspace\RobotFramework\ScreenShorts\Tc03_RadioButtons\selenium-screenshot-7.png</msg>
+<status status="PASS" starttime="20211208 19:58:05.601" endtime="20211208 19:58:05.739"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:05.600" endtime="20211208 19:58:05.739"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${InputFormsLink}</arg>
+</arguments>
+<status status="PASS" starttime="20211208 19:58:05.739" endtime="20211208 19:58:06.022"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${InputFormsLink}</arg>
+</arguments>
+<status status="PASS" starttime="20211208 19:58:06.022" endtime="20211208 19:58:06.048"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${InputFormsLink}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:06.049" level="INFO">Clicking link 'xpath=//*[@id="navbar-brand-centered"]/ul[1]/li[1]/a'.</msg>
+<status status="PASS" starttime="20211208 19:58:06.048" endtime="20211208 19:58:06.095"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${RadioButtonsDemo}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:06.095" level="INFO">Clicking element 'link=Radio Buttons Demo'.</msg>
+<status status="PASS" starttime="20211208 19:58:06.095" endtime="20211208 19:58:06.352"></status>
+</kw>
+<kw name="Validate_Radio_Button_Demo" library="Resource1">
+<doc>Selects every radio buttons and validates whether Radiobutton is selected.</doc>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>${RadioButton}</arg>
+<arg>${Male}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:06.354" level="INFO">Selecting 'Male' from radio button 'optradio'.</msg>
+<status status="PASS" starttime="20211208 19:58:06.353" endtime="20211208 19:58:06.415"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Click_GetCheckedValue}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:06.416" level="INFO">Clicking element 'id=buttoncheck'.</msg>
+<status status="PASS" starttime="20211208 19:58:06.415" endtime="20211208 19:58:06.453"></status>
+</kw>
+<kw name="Radio Button Should Be Set To" library="SeleniumLibrary">
+<doc>Verifies radio button group ``group_name`` is set to ``value``.</doc>
+<arguments>
+<arg>${RadioButton}</arg>
+<arg>${Male}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:06.454" level="INFO">Verifying radio button 'optradio' has selection 'Male'.</msg>
+<status status="PASS" starttime="20211208 19:58:06.453" endtime="20211208 19:58:06.480"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Click_GetCheckedValue}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:06.481" level="INFO">Clicking element 'id=buttoncheck'.</msg>
+<status status="PASS" starttime="20211208 19:58:06.480" endtime="20211208 19:58:06.500"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>${Printed_CheckedValue}</arg>
+<arg>Radio button 'Male' is checked</arg>
+</arguments>
+<msg timestamp="20211208 19:58:06.501" level="INFO">Verifying element 'xpath=//*[@id="easycont"]/div/div[2]/div[1]/div[2]/p[3]' contains exact text 'Radio button 'Male' is checked'.</msg>
+<status status="PASS" starttime="20211208 19:58:06.501" endtime="20211208 19:58:06.519"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>${RadioButton}</arg>
+<arg>${Female}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:06.519" level="INFO">Selecting 'Female' from radio button 'optradio'.</msg>
+<status status="PASS" starttime="20211208 19:58:06.519" endtime="20211208 19:58:06.564"></status>
+</kw>
+<kw name="Radio Button Should Be Set To" library="SeleniumLibrary">
+<doc>Verifies radio button group ``group_name`` is set to ``value``.</doc>
+<arguments>
+<arg>${RadioButton}</arg>
+<arg>${Female}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:06.565" level="INFO">Verifying radio button 'optradio' has selection 'Female'.</msg>
+<status status="PASS" starttime="20211208 19:58:06.565" endtime="20211208 19:58:06.588"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Click_GetCheckedValue}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:06.588" level="INFO">Clicking element 'id=buttoncheck'.</msg>
+<status status="PASS" starttime="20211208 19:58:06.588" endtime="20211208 19:58:06.606"></status>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>${Printed_CheckedValue}</arg>
+<arg>Radio button 'Female' is checked</arg>
+</arguments>
+<msg timestamp="20211208 19:58:06.618" level="INFO">Element 'xpath=//*[@id="easycont"]/div/div[2]/div[1]/div[2]/p[3]' contains text 'Radio button 'Female' is checked'.</msg>
+<status status="PASS" starttime="20211208 19:58:06.607" endtime="20211208 19:58:06.619"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:06.353" endtime="20211208 19:58:06.619"></status>
+</kw>
+<kw name="Capture_ScreenShort_Radiobutton" library="Resource1">
+<doc>Captures Screenshorts while validating RadioButtons.</doc>
+<kw name="Set Screenshot Directory" library="SeleniumLibrary">
+<doc>Sets the directory for captured screenshots.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/ScreenShorts/Tc03_RadioButtons</arg>
+</arguments>
+<assign>
+<var>${previous}</var>
+</assign>
+<msg timestamp="20211208 19:58:06.620" level="INFO">${previous} = C:\Users\REVATI YELE\eclipse-workspace\RobotFramework\ScreenShorts\Tc03_RadioButtons</msg>
+<status status="PASS" starttime="20211208 19:58:06.620" endtime="20211208 19:58:06.620"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<assign>
+<var>${file}</var>
+</assign>
+<msg timestamp="20211208 19:58:06.762" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShorts/Tc03_RadioButtons/selenium-screenshot-8.png"&gt;&lt;img src="ScreenShorts/Tc03_RadioButtons/selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20211208 19:58:06.762" level="INFO">${file} = C:\Users\REVATI YELE\eclipse-workspace\RobotFramework\ScreenShorts\Tc03_RadioButtons\selenium-screenshot-8.png</msg>
+<status status="PASS" starttime="20211208 19:58:06.621" endtime="20211208 19:58:06.762"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:06.619" endtime="20211208 19:58:06.762"></status>
+</kw>
+<kw name="Validate_Group_Radiobutton" library="Resource1">
+<doc>Selects every Radiobutton and Validates whether Radio button is selected.</doc>
+<kw name="${ListIndex1} IN [ @{Sex} ]" type="for">
+<kw name="${ListIndex1} = Male" type="foritem">
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>gender</arg>
+<arg>${ListIndex1}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:06.764" level="INFO">Selecting 'Male' from radio button 'gender'.</msg>
+<status status="PASS" starttime="20211208 19:58:06.764" endtime="20211208 19:58:06.811"></status>
+</kw>
+<kw name="Radio Button Should Be Set To" library="SeleniumLibrary">
+<doc>Verifies radio button group ``group_name`` is set to ``value``.</doc>
+<arguments>
+<arg>gender</arg>
+<arg>${ListIndex1}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:06.812" level="INFO">Verifying radio button 'gender' has selection 'Male'.</msg>
+<status status="PASS" starttime="20211208 19:58:06.811" endtime="20211208 19:58:06.838"></status>
+</kw>
+<kw name="Select_Age_Group" library="Resource1">
+<doc>Selects every Radiobuttons under group name-AgeGroup.</doc>
+<kw name="${ListIndex2} IN [ 0 - 5 | 5 - 15 | 15 - 50 ]" type="for">
+<kw name="${ListIndex2} = 0 - 5" type="foritem">
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>ageGroup</arg>
+<arg>${ListIndex2}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:06.840" level="INFO">Selecting '0 - 5' from radio button 'ageGroup'.</msg>
+<status status="PASS" starttime="20211208 19:58:06.839" endtime="20211208 19:58:06.892"></status>
+</kw>
+<kw name="Radio Button Should Be Set To" library="SeleniumLibrary">
+<doc>Verifies radio button group ``group_name`` is set to ``value``.</doc>
+<arguments>
+<arg>ageGroup</arg>
+<arg>${ListIndex2}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:06.892" level="INFO">Verifying radio button 'ageGroup' has selection '0 - 5'.</msg>
+<status status="PASS" starttime="20211208 19:58:06.892" endtime="20211208 19:58:06.917"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Click_Getvalues}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:06.918" level="INFO">Clicking element 'xpath=//button[@onclick='getValues();']'.</msg>
+<status status="PASS" starttime="20211208 19:58:06.918" endtime="20211208 19:58:06.952"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${Printed_Sex_Age}</arg>
+</arguments>
+<status status="PASS" starttime="20211208 19:58:06.953" endtime="20211208 19:58:07.242"></status>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>${Printed_Sex_Age}</arg>
+<arg>Age group: ${ListIndex2}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:07.270" level="INFO">Element 'xpath=//*[@id="easycont"]/div/div[2]/div[2]/div[2]/p[2]' contains text 'Age group: 0 - 5'.</msg>
+<status status="PASS" starttime="20211208 19:58:07.243" endtime="20211208 19:58:07.270"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20211208 19:58:08.277" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211208 19:58:07.271" endtime="20211208 19:58:08.277"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:06.839" endtime="20211208 19:58:08.277"></status>
+</kw>
+<kw name="${ListIndex2} = 5 - 15" type="foritem">
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>ageGroup</arg>
+<arg>${ListIndex2}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:08.279" level="INFO">Selecting '5 - 15' from radio button 'ageGroup'.</msg>
+<status status="PASS" starttime="20211208 19:58:08.278" endtime="20211208 19:58:08.331"></status>
+</kw>
+<kw name="Radio Button Should Be Set To" library="SeleniumLibrary">
+<doc>Verifies radio button group ``group_name`` is set to ``value``.</doc>
+<arguments>
+<arg>ageGroup</arg>
+<arg>${ListIndex2}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:08.333" level="INFO">Verifying radio button 'ageGroup' has selection '5 - 15'.</msg>
+<status status="PASS" starttime="20211208 19:58:08.331" endtime="20211208 19:58:08.353"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Click_Getvalues}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:08.354" level="INFO">Clicking element 'xpath=//button[@onclick='getValues();']'.</msg>
+<status status="PASS" starttime="20211208 19:58:08.354" endtime="20211208 19:58:08.376"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${Printed_Sex_Age}</arg>
+</arguments>
+<status status="PASS" starttime="20211208 19:58:08.376" endtime="20211208 19:58:08.655"></status>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>${Printed_Sex_Age}</arg>
+<arg>Age group: ${ListIndex2}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:08.666" level="INFO">Element 'xpath=//*[@id="easycont"]/div/div[2]/div[2]/div[2]/p[2]' contains text 'Age group: 5 - 15'.</msg>
+<status status="PASS" starttime="20211208 19:58:08.655" endtime="20211208 19:58:08.666"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20211208 19:58:09.677" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211208 19:58:08.666" endtime="20211208 19:58:09.677"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:08.278" endtime="20211208 19:58:09.677"></status>
+</kw>
+<kw name="${ListIndex2} = 15 - 50" type="foritem">
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>ageGroup</arg>
+<arg>${ListIndex2}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:09.678" level="INFO">Selecting '15 - 50' from radio button 'ageGroup'.</msg>
+<status status="PASS" starttime="20211208 19:58:09.678" endtime="20211208 19:58:09.739"></status>
+</kw>
+<kw name="Radio Button Should Be Set To" library="SeleniumLibrary">
+<doc>Verifies radio button group ``group_name`` is set to ``value``.</doc>
+<arguments>
+<arg>ageGroup</arg>
+<arg>${ListIndex2}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:09.741" level="INFO">Verifying radio button 'ageGroup' has selection '15 - 50'.</msg>
+<status status="PASS" starttime="20211208 19:58:09.740" endtime="20211208 19:58:09.765"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Click_Getvalues}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:09.766" level="INFO">Clicking element 'xpath=//button[@onclick='getValues();']'.</msg>
+<status status="PASS" starttime="20211208 19:58:09.766" endtime="20211208 19:58:09.787"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${Printed_Sex_Age}</arg>
+</arguments>
+<status status="PASS" starttime="20211208 19:58:09.787" endtime="20211208 19:58:10.061"></status>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>${Printed_Sex_Age}</arg>
+<arg>Age group: ${ListIndex2}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:10.082" level="INFO">Element 'xpath=//*[@id="easycont"]/div/div[2]/div[2]/div[2]/p[2]' contains text 'Age group: 15 - 50'.</msg>
+<status status="PASS" starttime="20211208 19:58:10.061" endtime="20211208 19:58:10.082"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20211208 19:58:11.093" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211208 19:58:10.082" endtime="20211208 19:58:11.093"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:09.677" endtime="20211208 19:58:11.094"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:06.839" endtime="20211208 19:58:11.094"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:06.838" endtime="20211208 19:58:11.095"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:06.764" endtime="20211208 19:58:11.095"></status>
+</kw>
+<kw name="${ListIndex1} = Female" type="foritem">
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>gender</arg>
+<arg>${ListIndex1}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:11.097" level="INFO">Selecting 'Female' from radio button 'gender'.</msg>
+<status status="PASS" starttime="20211208 19:58:11.096" endtime="20211208 19:58:11.163"></status>
+</kw>
+<kw name="Radio Button Should Be Set To" library="SeleniumLibrary">
+<doc>Verifies radio button group ``group_name`` is set to ``value``.</doc>
+<arguments>
+<arg>gender</arg>
+<arg>${ListIndex1}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:11.164" level="INFO">Verifying radio button 'gender' has selection 'Female'.</msg>
+<status status="PASS" starttime="20211208 19:58:11.164" endtime="20211208 19:58:11.183"></status>
+</kw>
+<kw name="Select_Age_Group" library="Resource1">
+<doc>Selects every Radiobuttons under group name-AgeGroup.</doc>
+<kw name="${ListIndex2} IN [ 0 - 5 | 5 - 15 | 15 - 50 ]" type="for">
+<kw name="${ListIndex2} = 0 - 5" type="foritem">
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>ageGroup</arg>
+<arg>${ListIndex2}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:11.184" level="INFO">Selecting '0 - 5' from radio button 'ageGroup'.</msg>
+<status status="PASS" starttime="20211208 19:58:11.184" endtime="20211208 19:58:11.209"></status>
+</kw>
+<kw name="Radio Button Should Be Set To" library="SeleniumLibrary">
+<doc>Verifies radio button group ``group_name`` is set to ``value``.</doc>
+<arguments>
+<arg>ageGroup</arg>
+<arg>${ListIndex2}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:11.210" level="INFO">Verifying radio button 'ageGroup' has selection '0 - 5'.</msg>
+<status status="PASS" starttime="20211208 19:58:11.210" endtime="20211208 19:58:11.225"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Click_Getvalues}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:11.225" level="INFO">Clicking element 'xpath=//button[@onclick='getValues();']'.</msg>
+<status status="PASS" starttime="20211208 19:58:11.225" endtime="20211208 19:58:11.244"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${Printed_Sex_Age}</arg>
+</arguments>
+<status status="PASS" starttime="20211208 19:58:11.244" endtime="20211208 19:58:11.515"></status>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>${Printed_Sex_Age}</arg>
+<arg>Age group: ${ListIndex2}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:11.539" level="INFO">Element 'xpath=//*[@id="easycont"]/div/div[2]/div[2]/div[2]/p[2]' contains text 'Age group: 0 - 5'.</msg>
+<status status="PASS" starttime="20211208 19:58:11.515" endtime="20211208 19:58:11.540"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20211208 19:58:12.553" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211208 19:58:11.540" endtime="20211208 19:58:12.554"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:11.184" endtime="20211208 19:58:12.554"></status>
+</kw>
+<kw name="${ListIndex2} = 5 - 15" type="foritem">
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>ageGroup</arg>
+<arg>${ListIndex2}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:12.556" level="INFO">Selecting '5 - 15' from radio button 'ageGroup'.</msg>
+<status status="PASS" starttime="20211208 19:58:12.555" endtime="20211208 19:58:12.611"></status>
+</kw>
+<kw name="Radio Button Should Be Set To" library="SeleniumLibrary">
+<doc>Verifies radio button group ``group_name`` is set to ``value``.</doc>
+<arguments>
+<arg>ageGroup</arg>
+<arg>${ListIndex2}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:12.611" level="INFO">Verifying radio button 'ageGroup' has selection '5 - 15'.</msg>
+<status status="PASS" starttime="20211208 19:58:12.611" endtime="20211208 19:58:12.637"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Click_Getvalues}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:12.638" level="INFO">Clicking element 'xpath=//button[@onclick='getValues();']'.</msg>
+<status status="PASS" starttime="20211208 19:58:12.637" endtime="20211208 19:58:12.656"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${Printed_Sex_Age}</arg>
+</arguments>
+<status status="PASS" starttime="20211208 19:58:12.657" endtime="20211208 19:58:12.931"></status>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>${Printed_Sex_Age}</arg>
+<arg>Age group: ${ListIndex2}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:12.955" level="INFO">Element 'xpath=//*[@id="easycont"]/div/div[2]/div[2]/div[2]/p[2]' contains text 'Age group: 5 - 15'.</msg>
+<status status="PASS" starttime="20211208 19:58:12.931" endtime="20211208 19:58:12.957"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20211208 19:58:13.966" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211208 19:58:12.957" endtime="20211208 19:58:13.967"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:12.555" endtime="20211208 19:58:13.967"></status>
+</kw>
+<kw name="${ListIndex2} = 15 - 50" type="foritem">
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>ageGroup</arg>
+<arg>${ListIndex2}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:13.970" level="INFO">Selecting '15 - 50' from radio button 'ageGroup'.</msg>
+<status status="PASS" starttime="20211208 19:58:13.969" endtime="20211208 19:58:14.017"></status>
+</kw>
+<kw name="Radio Button Should Be Set To" library="SeleniumLibrary">
+<doc>Verifies radio button group ``group_name`` is set to ``value``.</doc>
+<arguments>
+<arg>ageGroup</arg>
+<arg>${ListIndex2}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:14.018" level="INFO">Verifying radio button 'ageGroup' has selection '15 - 50'.</msg>
+<status status="PASS" starttime="20211208 19:58:14.018" endtime="20211208 19:58:14.042"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Click_Getvalues}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:14.043" level="INFO">Clicking element 'xpath=//button[@onclick='getValues();']'.</msg>
+<status status="PASS" starttime="20211208 19:58:14.043" endtime="20211208 19:58:14.062"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${Printed_Sex_Age}</arg>
+</arguments>
+<status status="PASS" starttime="20211208 19:58:14.062" endtime="20211208 19:58:14.341"></status>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>${Printed_Sex_Age}</arg>
+<arg>Age group: ${ListIndex2}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:14.364" level="INFO">Element 'xpath=//*[@id="easycont"]/div/div[2]/div[2]/div[2]/p[2]' contains text 'Age group: 15 - 50'.</msg>
+<status status="PASS" starttime="20211208 19:58:14.342" endtime="20211208 19:58:14.365"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20211208 19:58:15.380" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211208 19:58:14.365" endtime="20211208 19:58:15.381"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:13.968" endtime="20211208 19:58:15.382"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:11.184" endtime="20211208 19:58:15.382"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:11.183" endtime="20211208 19:58:15.383"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:11.095" endtime="20211208 19:58:15.383"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:06.763" endtime="20211208 19:58:15.383"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:06.763" endtime="20211208 19:58:15.384"></status>
+</kw>
+<kw name="Capture_ScreenShort_Radiobutton" library="Resource1">
+<doc>Captures Screenshorts while validating RadioButtons.</doc>
+<kw name="Set Screenshot Directory" library="SeleniumLibrary">
+<doc>Sets the directory for captured screenshots.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/ScreenShorts/Tc03_RadioButtons</arg>
+</arguments>
+<assign>
+<var>${previous}</var>
+</assign>
+<msg timestamp="20211208 19:58:15.386" level="INFO">${previous} = C:\Users\REVATI YELE\eclipse-workspace\RobotFramework\ScreenShorts\Tc03_RadioButtons</msg>
+<status status="PASS" starttime="20211208 19:58:15.385" endtime="20211208 19:58:15.387"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<assign>
+<var>${file}</var>
+</assign>
+<msg timestamp="20211208 19:58:15.516" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShorts/Tc03_RadioButtons/selenium-screenshot-9.png"&gt;&lt;img src="ScreenShorts/Tc03_RadioButtons/selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20211208 19:58:15.516" level="INFO">${file} = C:\Users\REVATI YELE\eclipse-workspace\RobotFramework\ScreenShorts\Tc03_RadioButtons\selenium-screenshot-9.png</msg>
+<status status="PASS" starttime="20211208 19:58:15.387" endtime="20211208 19:58:15.516"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:15.384" endtime="20211208 19:58:15.517"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:05.599" endtime="20211208 19:58:15.518" critical="yes"></status>
+</test>
+<test id="s1-s1-t4" name="Testcase4_Table Search">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${Table}</arg>
+</arguments>
+<status status="PASS" starttime="20211208 19:58:15.519" endtime="20211208 19:58:15.818"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Table}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:15.819" level="INFO">Clicking element 'link=Table'.</msg>
+<status status="PASS" starttime="20211208 19:58:15.819" endtime="20211208 19:58:15.880"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${TableDataSearch}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:15.881" level="INFO">Clicking element 'xpath=//a[@href='./table-search-filter-demo.html']'.</msg>
+<status status="PASS" starttime="20211208 19:58:15.880" endtime="20211208 19:58:16.217"></status>
+</kw>
+<kw name="Get_Rows&amp;Columns_Count" library="Resource1">
+<doc>Returns No of rows and columns.</doc>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<doc>Returns the number of elements matching ``locator``.</doc>
+<arguments>
+<arg>${No_of_Rows}</arg>
+</arguments>
+<assign>
+<var>${rows}</var>
+</assign>
+<msg timestamp="20211208 19:58:16.241" level="INFO">${rows} = 7</msg>
+<status status="PASS" starttime="20211208 19:58:16.218" endtime="20211208 19:58:16.241"></status>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<doc>Returns the number of elements matching ``locator``.</doc>
+<arguments>
+<arg>${No_of_Columns}</arg>
+</arguments>
+<assign>
+<var>${cols}</var>
+</assign>
+<msg timestamp="20211208 19:58:16.256" level="INFO">${cols} = 4</msg>
+<status status="PASS" starttime="20211208 19:58:16.242" endtime="20211208 19:58:16.256"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:16.217" endtime="20211208 19:58:16.257"></status>
+</kw>
+<kw name=" Validate_table_data_After_Filter" library="Resource1">
+<doc>Verifies whether table has expected data.</doc>
+<kw name="${Name_ListIndex} IN [ @{Filter_By_Name} ]" type="for">
+<kw name="${Name_ListIndex} = Wireframes" type="foritem">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${FilterInput}</arg>
+<arg>${Name_ListIndex}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:16.262" level="INFO">Typing text 'Wireframes' into text field 'xpath=//input[@id='task-table-filter']'.</msg>
+<status status="PASS" starttime="20211208 19:58:16.262" endtime="20211208 19:58:16.346"></status>
+</kw>
+<kw name="Capture_ScreenShort_TableSearch" library="Resource1">
+<doc>Captures Screenshorts while validating Table Search.</doc>
+<kw name="Set Screenshot Directory" library="SeleniumLibrary">
+<doc>Sets the directory for captured screenshots.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/ScreenShorts/Tc04_TableDataSearch</arg>
+</arguments>
+<assign>
+<var>${previous}</var>
+</assign>
+<msg timestamp="20211208 19:58:16.347" level="INFO">${previous} = C:\Users\REVATI YELE\eclipse-workspace\RobotFramework\ScreenShorts\Tc03_RadioButtons</msg>
+<status status="PASS" starttime="20211208 19:58:16.346" endtime="20211208 19:58:16.347"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<assign>
+<var>${file}</var>
+</assign>
+<msg timestamp="20211208 19:58:16.517" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShorts/Tc04_TableDataSearch/selenium-screenshot-7.png"&gt;&lt;img src="ScreenShorts/Tc04_TableDataSearch/selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20211208 19:58:16.518" level="INFO">${file} = C:\Users\REVATI YELE\eclipse-workspace\RobotFramework\ScreenShorts\Tc04_TableDataSearch\selenium-screenshot-7.png</msg>
+<status status="PASS" starttime="20211208 19:58:16.347" endtime="20211208 19:58:16.518"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:16.346" endtime="20211208 19:58:16.519"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Table_Content_After_Filter}</arg>
+</arguments>
+<assign>
+<var>${data1}</var>
+</assign>
+<msg timestamp="20211208 19:58:16.545" level="INFO">${data1} = # Task Assignee Status
+1 Wireframes John Smith in progress</msg>
+<status status="PASS" starttime="20211208 19:58:16.519" endtime="20211208 19:58:16.545"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${data1}</arg>
+</arguments>
+<assign>
+<var>${source}</var>
+</assign>
+<msg timestamp="20211208 19:58:16.546" level="INFO">${source} = # Task Assignee Status
+1 Wireframes John Smith in progress</msg>
+<status status="PASS" starttime="20211208 19:58:16.545" endtime="20211208 19:58:16.546"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>"${Name_ListIndex}"</arg>
+<arg>"${source}"</arg>
+</arguments>
+<status status="PASS" starttime="20211208 19:58:16.546" endtime="20211208 19:58:16.547"></status>
+</kw>
+<kw name="Verify_Table_Content_After_Filter" library="Resource1">
+<doc>Verifies whether the particular Row has expected data.</doc>
+<kw name="${p} IN [ @{Table_Row_No} ]" type="for">
+<kw name="${p} = 1" type="foritem">
+<kw name="Table Row Should Contain" library="SeleniumLibrary">
+<doc>Verifies that table row contains text ``expected``.</doc>
+<arguments>
+<arg>${Table_Content_After_Filter}</arg>
+<arg>${p}</arg>
+<arg>${Name_ListIndex}</arg>
+</arguments>
+<status status="PASS" starttime="20211208 19:58:16.550" endtime="20211208 19:58:16.582"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:16.549" endtime="20211208 19:58:16.582"></status>
+</kw>
+<kw name="${p} = 2" type="foritem">
+<kw name="Table Row Should Contain" library="SeleniumLibrary">
+<doc>Verifies that table row contains text ``expected``.</doc>
+<arguments>
+<arg>${Table_Content_After_Filter}</arg>
+<arg>${p}</arg>
+<arg>${Name_ListIndex}</arg>
+</arguments>
+<status status="PASS" starttime="20211208 19:58:16.582" endtime="20211208 19:58:16.626"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:16.582" endtime="20211208 19:58:16.626"></status>
+</kw>
+<kw name="${p} = 5" type="foritem">
+<kw name="Table Row Should Contain" library="SeleniumLibrary">
+<doc>Verifies that table row contains text ``expected``.</doc>
+<arguments>
+<arg>${Table_Content_After_Filter}</arg>
+<arg>${p}</arg>
+<arg>${Name_ListIndex}</arg>
+</arguments>
+<status status="PASS" starttime="20211208 19:58:16.626" endtime="20211208 19:58:16.674"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:16.626" endtime="20211208 19:58:16.674"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:16.548" endtime="20211208 19:58:16.674"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:16.548" endtime="20211208 19:58:16.674"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:16.262" endtime="20211208 19:58:16.675"></status>
+</kw>
+<kw name="${Name_ListIndex} = Mike Trout" type="foritem">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${FilterInput}</arg>
+<arg>${Name_ListIndex}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:16.675" level="INFO">Typing text 'Mike Trout' into text field 'xpath=//input[@id='task-table-filter']'.</msg>
+<status status="PASS" starttime="20211208 19:58:16.675" endtime="20211208 19:58:16.727"></status>
+</kw>
+<kw name="Capture_ScreenShort_TableSearch" library="Resource1">
+<doc>Captures Screenshorts while validating Table Search.</doc>
+<kw name="Set Screenshot Directory" library="SeleniumLibrary">
+<doc>Sets the directory for captured screenshots.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/ScreenShorts/Tc04_TableDataSearch</arg>
+</arguments>
+<assign>
+<var>${previous}</var>
+</assign>
+<msg timestamp="20211208 19:58:16.730" level="INFO">${previous} = C:\Users\REVATI YELE\eclipse-workspace\RobotFramework\ScreenShorts\Tc04_TableDataSearch</msg>
+<status status="PASS" starttime="20211208 19:58:16.728" endtime="20211208 19:58:16.730"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<assign>
+<var>${file}</var>
+</assign>
+<msg timestamp="20211208 19:58:16.882" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShorts/Tc04_TableDataSearch/selenium-screenshot-8.png"&gt;&lt;img src="ScreenShorts/Tc04_TableDataSearch/selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20211208 19:58:16.883" level="INFO">${file} = C:\Users\REVATI YELE\eclipse-workspace\RobotFramework\ScreenShorts\Tc04_TableDataSearch\selenium-screenshot-8.png</msg>
+<status status="PASS" starttime="20211208 19:58:16.730" endtime="20211208 19:58:16.883"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:16.728" endtime="20211208 19:58:16.883"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Table_Content_After_Filter}</arg>
+</arguments>
+<assign>
+<var>${data1}</var>
+</assign>
+<msg timestamp="20211208 19:58:16.899" level="INFO">${data1} = # Task Assignee Status
+2 Landing Page Mike Trout completed</msg>
+<status status="PASS" starttime="20211208 19:58:16.883" endtime="20211208 19:58:16.899"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${data1}</arg>
+</arguments>
+<assign>
+<var>${source}</var>
+</assign>
+<msg timestamp="20211208 19:58:16.900" level="INFO">${source} = # Task Assignee Status
+2 Landing Page Mike Trout completed</msg>
+<status status="PASS" starttime="20211208 19:58:16.900" endtime="20211208 19:58:16.900"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>"${Name_ListIndex}"</arg>
+<arg>"${source}"</arg>
+</arguments>
+<status status="PASS" starttime="20211208 19:58:16.900" endtime="20211208 19:58:16.901"></status>
+</kw>
+<kw name="Verify_Table_Content_After_Filter" library="Resource1">
+<doc>Verifies whether the particular Row has expected data.</doc>
+<kw name="${p} IN [ @{Table_Row_No} ]" type="for">
+<kw name="${p} = 1" type="foritem">
+<kw name="Table Row Should Contain" library="SeleniumLibrary">
+<doc>Verifies that table row contains text ``expected``.</doc>
+<arguments>
+<arg>${Table_Content_After_Filter}</arg>
+<arg>${p}</arg>
+<arg>${Name_ListIndex}</arg>
+</arguments>
+<status status="PASS" starttime="20211208 19:58:16.901" endtime="20211208 19:58:16.928"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:16.901" endtime="20211208 19:58:16.929"></status>
+</kw>
+<kw name="${p} = 2" type="foritem">
+<kw name="Table Row Should Contain" library="SeleniumLibrary">
+<doc>Verifies that table row contains text ``expected``.</doc>
+<arguments>
+<arg>${Table_Content_After_Filter}</arg>
+<arg>${p}</arg>
+<arg>${Name_ListIndex}</arg>
+</arguments>
+<status status="PASS" starttime="20211208 19:58:16.929" endtime="20211208 19:58:16.950"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:16.929" endtime="20211208 19:58:16.950"></status>
+</kw>
+<kw name="${p} = 5" type="foritem">
+<kw name="Table Row Should Contain" library="SeleniumLibrary">
+<doc>Verifies that table row contains text ``expected``.</doc>
+<arguments>
+<arg>${Table_Content_After_Filter}</arg>
+<arg>${p}</arg>
+<arg>${Name_ListIndex}</arg>
+</arguments>
+<status status="PASS" starttime="20211208 19:58:16.951" endtime="20211208 19:58:16.977"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:16.950" endtime="20211208 19:58:16.977"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:16.901" endtime="20211208 19:58:16.978"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:16.901" endtime="20211208 19:58:16.978"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:16.675" endtime="20211208 19:58:16.978"></status>
+</kw>
+<kw name="${Name_ListIndex} = deployed" type="foritem">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${FilterInput}</arg>
+<arg>${Name_ListIndex}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:16.979" level="INFO">Typing text 'deployed' into text field 'xpath=//input[@id='task-table-filter']'.</msg>
+<status status="PASS" starttime="20211208 19:58:16.978" endtime="20211208 19:58:17.042"></status>
+</kw>
+<kw name="Capture_ScreenShort_TableSearch" library="Resource1">
+<doc>Captures Screenshorts while validating Table Search.</doc>
+<kw name="Set Screenshot Directory" library="SeleniumLibrary">
+<doc>Sets the directory for captured screenshots.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/ScreenShorts/Tc04_TableDataSearch</arg>
+</arguments>
+<assign>
+<var>${previous}</var>
+</assign>
+<msg timestamp="20211208 19:58:17.046" level="INFO">${previous} = C:\Users\REVATI YELE\eclipse-workspace\RobotFramework\ScreenShorts\Tc04_TableDataSearch</msg>
+<status status="PASS" starttime="20211208 19:58:17.045" endtime="20211208 19:58:17.046"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<assign>
+<var>${file}</var>
+</assign>
+<msg timestamp="20211208 19:58:17.196" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShorts/Tc04_TableDataSearch/selenium-screenshot-9.png"&gt;&lt;img src="ScreenShorts/Tc04_TableDataSearch/selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20211208 19:58:17.197" level="INFO">${file} = C:\Users\REVATI YELE\eclipse-workspace\RobotFramework\ScreenShorts\Tc04_TableDataSearch\selenium-screenshot-9.png</msg>
+<status status="PASS" starttime="20211208 19:58:17.047" endtime="20211208 19:58:17.197"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:17.043" endtime="20211208 19:58:17.197"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Table_Content_After_Filter}</arg>
+</arguments>
+<assign>
+<var>${data1}</var>
+</assign>
+<msg timestamp="20211208 19:58:17.217" level="INFO">${data1} = # Task Assignee Status
+5 jQuery library Holden Charles deployed</msg>
+<status status="PASS" starttime="20211208 19:58:17.197" endtime="20211208 19:58:17.217"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${data1}</arg>
+</arguments>
+<assign>
+<var>${source}</var>
+</assign>
+<msg timestamp="20211208 19:58:17.218" level="INFO">${source} = # Task Assignee Status
+5 jQuery library Holden Charles deployed</msg>
+<status status="PASS" starttime="20211208 19:58:17.218" endtime="20211208 19:58:17.219"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>"${Name_ListIndex}"</arg>
+<arg>"${source}"</arg>
+</arguments>
+<status status="PASS" starttime="20211208 19:58:17.219" endtime="20211208 19:58:17.219"></status>
+</kw>
+<kw name="Verify_Table_Content_After_Filter" library="Resource1">
+<doc>Verifies whether the particular Row has expected data.</doc>
+<kw name="${p} IN [ @{Table_Row_No} ]" type="for">
+<kw name="${p} = 1" type="foritem">
+<kw name="Table Row Should Contain" library="SeleniumLibrary">
+<doc>Verifies that table row contains text ``expected``.</doc>
+<arguments>
+<arg>${Table_Content_After_Filter}</arg>
+<arg>${p}</arg>
+<arg>${Name_ListIndex}</arg>
+</arguments>
+<status status="PASS" starttime="20211208 19:58:17.220" endtime="20211208 19:58:17.252"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:17.220" endtime="20211208 19:58:17.252"></status>
+</kw>
+<kw name="${p} = 2" type="foritem">
+<kw name="Table Row Should Contain" library="SeleniumLibrary">
+<doc>Verifies that table row contains text ``expected``.</doc>
+<arguments>
+<arg>${Table_Content_After_Filter}</arg>
+<arg>${p}</arg>
+<arg>${Name_ListIndex}</arg>
+</arguments>
+<status status="PASS" starttime="20211208 19:58:17.252" endtime="20211208 19:58:17.280"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:17.252" endtime="20211208 19:58:17.280"></status>
+</kw>
+<kw name="${p} = 5" type="foritem">
+<kw name="Table Row Should Contain" library="SeleniumLibrary">
+<doc>Verifies that table row contains text ``expected``.</doc>
+<arguments>
+<arg>${Table_Content_After_Filter}</arg>
+<arg>${p}</arg>
+<arg>${Name_ListIndex}</arg>
+</arguments>
+<status status="PASS" starttime="20211208 19:58:17.281" endtime="20211208 19:58:17.301"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:17.280" endtime="20211208 19:58:17.302"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:17.220" endtime="20211208 19:58:17.302"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:17.219" endtime="20211208 19:58:17.302"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:16.978" endtime="20211208 19:58:17.302"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:16.261" endtime="20211208 19:58:17.302"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:16.259" endtime="20211208 19:58:17.302"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:15.519" endtime="20211208 19:58:17.303" critical="yes"></status>
+</test>
+<test id="s1-s1-t5" name="Testcase5_Alerts">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${Alerts&amp;Modals}</arg>
+</arguments>
+<status status="PASS" starttime="20211208 19:58:17.304" endtime="20211208 19:58:17.580"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Alerts&amp;Modals}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:17.581" level="INFO">Clicking element 'xpath=//*[@id="treemenu"]/li/ul/li[5]/a'.</msg>
+<status status="PASS" starttime="20211208 19:58:17.580" endtime="20211208 19:58:17.617"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Java_Scripts_Alerts}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:17.618" level="INFO">Clicking element 'xpath=//*[@id="treemenu"]/li/ul/li[5]/ul/li[5]/a'.</msg>
+<status status="PASS" starttime="20211208 19:58:17.617" endtime="20211208 19:58:17.860"></status>
+</kw>
+<kw name="AlertBox_validation" library="Resource1">
+<doc>1. Selects Alertbox
+2. Accepts Alertbox
+3. Verifies whether above actions is done.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Click_Alert_Box}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:17.862" level="INFO">Clicking element 'xpath=//*[@id="easycont"]/div/div[2]/div[1]/div[2]/button'.</msg>
+<status status="PASS" starttime="20211208 19:58:17.862" endtime="20211208 19:58:17.902"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20211208 19:58:18.916" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211208 19:58:17.902" endtime="20211208 19:58:18.917"></status>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<doc>Handles the current alert and returns its message.</doc>
+<assign>
+<var>${message}</var>
+</assign>
+<msg timestamp="20211208 19:58:18.919" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<msg timestamp="20211208 19:58:18.928" level="INFO">${message} = I am an alert box!</msg>
+<status status="PASS" starttime="20211208 19:58:18.918" endtime="20211208 19:58:18.928"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${message}</arg>
+<arg>I am an alert box!</arg>
+</arguments>
+<status status="PASS" starttime="20211208 19:58:18.929" endtime="20211208 19:58:18.931"></status>
+</kw>
+<kw name="Capture_ScreenShort_JavaScriptsAlerts" library="Resource1">
+<doc>Captures Screenshorts while validating Alerts.</doc>
+<kw name="Set Screenshot Directory" library="SeleniumLibrary">
+<doc>Sets the directory for captured screenshots.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/ScreenShorts/Tc06_JavaScriptAlerts</arg>
+</arguments>
+<assign>
+<var>${previous}</var>
+</assign>
+<msg timestamp="20211208 19:58:18.936" level="INFO">${previous} = C:\Users\REVATI YELE\eclipse-workspace\RobotFramework\ScreenShorts\Tc04_TableDataSearch</msg>
+<status status="PASS" starttime="20211208 19:58:18.933" endtime="20211208 19:58:18.936"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<assign>
+<var>${file}</var>
+</assign>
+<msg timestamp="20211208 19:58:19.129" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShorts/Tc06_JavaScriptAlerts/selenium-screenshot-7.png"&gt;&lt;img src="ScreenShorts/Tc06_JavaScriptAlerts/selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20211208 19:58:19.129" level="INFO">${file} = C:\Users\REVATI YELE\eclipse-workspace\RobotFramework\ScreenShorts\Tc06_JavaScriptAlerts\selenium-screenshot-7.png</msg>
+<status status="PASS" starttime="20211208 19:58:18.936" endtime="20211208 19:58:19.129"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:18.931" endtime="20211208 19:58:19.130"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:17.860" endtime="20211208 19:58:19.130"></status>
+</kw>
+<kw name="ConfirmBox_Validation" library="Resource1">
+<doc>1. Selects Confirm Alert Box
+2. Dismiss Confirm Box
+3. Verifies whether above actions is done.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Click_Confirm_Box}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:19.131" level="INFO">Clicking element 'xpath=//*[@id="easycont"]/div/div[2]/div[2]/div[2]/button'.</msg>
+<status status="PASS" starttime="20211208 19:58:19.131" endtime="20211208 19:58:19.172"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20211208 19:58:20.186" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211208 19:58:19.173" endtime="20211208 19:58:20.187"></status>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<doc>Handles the current alert and returns its message.</doc>
+<arguments>
+<arg>action=DISMISS</arg>
+</arguments>
+<assign>
+<var>${message2}</var>
+</assign>
+<msg timestamp="20211208 19:58:20.189" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<msg timestamp="20211208 19:58:20.198" level="INFO">${message2} = Press a button!</msg>
+<status status="PASS" starttime="20211208 19:58:20.187" endtime="20211208 19:58:20.198"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${message2}</arg>
+<arg>Press a button!</arg>
+</arguments>
+<status status="PASS" starttime="20211208 19:58:20.199" endtime="20211208 19:58:20.200"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${Printed_AlertMessage}</arg>
+</arguments>
+<status status="PASS" starttime="20211208 19:58:20.201" endtime="20211208 19:58:20.500"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>${Printed_AlertMessage}</arg>
+<arg>You pressed Cancel!</arg>
+</arguments>
+<msg timestamp="20211208 19:58:20.502" level="INFO">Verifying element 'xpath=//*[@id="confirm-demo"]' contains exact text 'You pressed Cancel!'.</msg>
+<status status="PASS" starttime="20211208 19:58:20.501" endtime="20211208 19:58:20.531"></status>
+</kw>
+<kw name="Capture_ScreenShort_JavaScriptsAlerts" library="Resource1">
+<doc>Captures Screenshorts while validating Alerts.</doc>
+<kw name="Set Screenshot Directory" library="SeleniumLibrary">
+<doc>Sets the directory for captured screenshots.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/ScreenShorts/Tc06_JavaScriptAlerts</arg>
+</arguments>
+<assign>
+<var>${previous}</var>
+</assign>
+<msg timestamp="20211208 19:58:20.533" level="INFO">${previous} = C:\Users\REVATI YELE\eclipse-workspace\RobotFramework\ScreenShorts\Tc06_JavaScriptAlerts</msg>
+<status status="PASS" starttime="20211208 19:58:20.532" endtime="20211208 19:58:20.533"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<assign>
+<var>${file}</var>
+</assign>
+<msg timestamp="20211208 19:58:20.689" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShorts/Tc06_JavaScriptAlerts/selenium-screenshot-8.png"&gt;&lt;img src="ScreenShorts/Tc06_JavaScriptAlerts/selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20211208 19:58:20.690" level="INFO">${file} = C:\Users\REVATI YELE\eclipse-workspace\RobotFramework\ScreenShorts\Tc06_JavaScriptAlerts\selenium-screenshot-8.png</msg>
+<status status="PASS" starttime="20211208 19:58:20.533" endtime="20211208 19:58:20.690"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:20.531" endtime="20211208 19:58:20.691"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:19.130" endtime="20211208 19:58:20.692"></status>
+</kw>
+<kw name="PromptBox_Validation" library="Resource1">
+<doc>1. Selects Prompt Box.
+2. Enters input in prompt box and accepts prompt box.
+3. Verifies whether above actions is done.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Click_Prompt_Box}</arg>
+</arguments>
+<msg timestamp="20211208 19:58:20.693" level="INFO">Clicking element 'xpath=//*[@id="easycont"]/div/div[2]/div[3]/div[2]/button'.</msg>
+<status status="PASS" starttime="20211208 19:58:20.693" endtime="20211208 19:58:20.742"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20211208 19:58:21.743" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211208 19:58:20.742" endtime="20211208 19:58:21.744"></status>
+</kw>
+<kw name="Input Text Into Alert" library="SeleniumLibrary">
+<doc>Types the given ``text`` into an input field in an alert.</doc>
+<arguments>
+<arg>${Enter_input_IN_AlertBox}</arg>
+<arg>action=ACCEPT</arg>
+</arguments>
+<status status="PASS" starttime="20211208 19:58:21.744" endtime="20211208 19:58:21.757"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${Printed_PromptBox_message}</arg>
+</arguments>
+<status status="PASS" starttime="20211208 19:58:21.757" endtime="20211208 19:58:22.042"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>${Printed_PromptBox_message}</arg>
+<arg>You have entered 'Selenium' !</arg>
+</arguments>
+<msg timestamp="20211208 19:58:22.044" level="INFO">Verifying element 'xpath=//*[@id="prompt-demo"]' contains exact text 'You have entered 'Selenium' !'.</msg>
+<status status="PASS" starttime="20211208 19:58:22.043" endtime="20211208 19:58:22.068"></status>
+</kw>
+<kw name="Capture_ScreenShort_JavaScriptsAlerts" library="Resource1">
+<doc>Captures Screenshorts while validating Alerts.</doc>
+<kw name="Set Screenshot Directory" library="SeleniumLibrary">
+<doc>Sets the directory for captured screenshots.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/ScreenShorts/Tc06_JavaScriptAlerts</arg>
+</arguments>
+<assign>
+<var>${previous}</var>
+</assign>
+<msg timestamp="20211208 19:58:22.069" level="INFO">${previous} = C:\Users\REVATI YELE\eclipse-workspace\RobotFramework\ScreenShorts\Tc06_JavaScriptAlerts</msg>
+<status status="PASS" starttime="20211208 19:58:22.069" endtime="20211208 19:58:22.070"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<assign>
+<var>${file}</var>
+</assign>
+<msg timestamp="20211208 19:58:22.206" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShorts/Tc06_JavaScriptAlerts/selenium-screenshot-9.png"&gt;&lt;img src="ScreenShorts/Tc06_JavaScriptAlerts/selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20211208 19:58:22.206" level="INFO">${file} = C:\Users\REVATI YELE\eclipse-workspace\RobotFramework\ScreenShorts\Tc06_JavaScriptAlerts\selenium-screenshot-9.png</msg>
+<status status="PASS" starttime="20211208 19:58:22.070" endtime="20211208 19:58:22.207"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:22.068" endtime="20211208 19:58:22.207"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:20.692" endtime="20211208 19:58:22.208"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:58:17.303" endtime="20211208 19:58:22.208" critical="yes"></status>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211208 19:58:22.209" endtime="20211208 19:58:24.514"></status>
+</kw>
+<status status="PASS" starttime="20211208 19:57:55.441" endtime="20211208 19:58:24.516"></status>
+</suite>
+<status status="PASS" starttime="20211208 19:57:55.420" endtime="20211208 19:58:24.522"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0">Critical Tests</stat>
+<stat pass="5" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" id="s1" name="RobotFramework">RobotFramework</stat>
+<stat pass="5" fail="0" id="s1-s1" name="TESTSUITE1">RobotFramework.TESTSUITE1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

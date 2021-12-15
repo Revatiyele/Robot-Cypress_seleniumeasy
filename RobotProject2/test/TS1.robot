@@ -4,6 +4,7 @@ Suite Setup     Open Browser   ${URL}   ${BROWSER}
 Suite Teardown  Close Browser
 Resource    ../Resources/Variables.robot
 Resource    ../Resources/Keywords.robot
+Library   DateTime
  
 ***Test Cases***
 TestCase1_SimpleForms
@@ -70,4 +71,20 @@ Testcase5_Alerts
     click element                  ${Java_Scripts_Alerts}
     AlertBox_validation
     ConfirmBox_Validation    
-    PromptBox_Validation  
+    PromptBox_Validation
+    
+Scenario 5 (Date Picker)
+    Close_Popup
+    Wait Until Element Is Visible   ${DatePicker}
+    Click Element                   ${DatePicker}
+    Click Element                   ${Bootsrap_DatePicker}
+    Click Element                   ${Click_DD-MM-YY}
+    Click Element                   ${Select_Today}
+    Sleep  1s
+    Capture_ScreenShort_DatePicker
+    Click Element                   ${Click_DD-MM-YY}
+    Click Element                   ${Select_Clear}
+    Sleep  1s
+    Capture_ScreenShort_DatePicker
+    Get_MonthYear
+    Element should contain   ${Get_Month&Year}   December 2021

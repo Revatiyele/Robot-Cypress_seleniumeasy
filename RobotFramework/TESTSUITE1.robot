@@ -71,3 +71,6 @@ Testcase5_Alerts
     AlertBox_validation
     ConfirmBox_Validation    
     PromptBox_Validation  
+    
+testcase6
+    

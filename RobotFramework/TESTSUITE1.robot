@@ -73,4 +73,4 @@ Testcase5_Alerts
     PromptBox_Validation  
     
 testcase6
-    
+        Scroll Element Into View       ${Alerts&Modals}
